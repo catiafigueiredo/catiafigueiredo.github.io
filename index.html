@@ -2,90 +2,64 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
+        <title>Project: Event invite</title>
         <style>
-            body {
-                background-color: rgb(255, 253, 237);
+            .side-bar {
+                float:right;
+                width: 170px;
+                text-align: center;
+                padding: 5px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background-color: rgb(247, 210, 228);
+            }
+            #earth {
+               width: 140px;
+            }
+            .main-area {
+                text-align: center;
+                padding: 5px;
+                margin-right: 190px;
             }
             h1 {
-                color: rgb(166, 13, 13);
-                font-family: "Papyrus", sans-serif;
-                text-align: center;
-            }
+                font-family: Papyrus;
+            } 
             h2 {
-                font-family: "Papyrus", sans-serif;
+                font-family: Papyrus;
+            }
+            #croissant {
+                width: 275px;
+            }
+            .footer {
                 text-align: center;
-            }
-            h6 {
-                font-family: "Harrington";
-                font-size: 10px;
-                text-decoration: underline;
-            }
-            p {
-                text-align: justify;
-            }
-            #contents {
-                font-size: 14px;
-                font-style: italic;
-                text-align: center;
-            }
-            #sumarry-table{
-                width: auto;
-                margin: 0 auto;
-                text-align: center;
+                clear:right;
+                background-color: rgb(224, 224, 224);
             }
         </style>
         
     </head>
     <body>
-        
-        <h1>Cátia's blog</h1>
-        <br>
-        
-        <h2>Computer Programing</h2>
-        
-        <ul id="contents">
-            <li><a href="#summary">Summary of learned courses & subjects</a></li>
-            <li><a href="#java-script">Intro to JS: Drawing & Animation</a></li>
-            <li><a href="#html-css">Intro to HTML/CSS: Making webpages</a></li>
-        </ul><br>
-        <br>
-        
-        <h2 id="summary">Summary of learned courses & subjects</h2>
-        <div id="table-container">
-        <table id="sumarry-table">
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Topics to learn</th>
-                    <th>Concluded</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Intro to JS: Drawing & Animation</td>
-                    <td>18</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Intro to HTML/CSS: Making webpages</td>
-                    <td>9</td>
-                    <td>4</td>
-                </tr>
-            </tbody>
-        </table><br>
+        <div class="side-bar">
+            <p>Let's thank the Planet Earth<br>
+            for the first time!</p><br>
+            <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" width="30"><br>
+            <img id="earth" src="https://www.kasandbox.org/programming-images/space/planet.png">
         </div>
-        <br>
         
-        <h2 id="java-script">Intro to JS: Drawing & Animation</h2>
-        <h6>Finished on 3rd April 2020</h6>
-        <p>List of subjects: Intro to programming, Drawing basics, Coloring, Variables, Animation basics, Interactive programs, Becoming a community coder, Bonus: Resizing with variables, Text and strings, Functions, Logic and if Statements, Debugging programs, Looping, Writing clean code, Arrays, Objects, Object-Oriented Design, Becoming a better programmer</p><br>
-        <br>
-        
-        <h2 id="html-css">Intro to HTML/CSS: Making webpages</h2>
-        <h6>Still not finished</h6>
-        <p>List of subjects: Projects in progress, Projects completed, Intro to HTML, Intro to CSS, More HTML tags, CSS text properties, Web development tools, CSS layout, More CSS selectors, Other ways to embed CSS, Further learning</p><br>
-        <br>
+        <div class="main-area">
+            <h1>Stay at home</h1>
+            <h2>Everybody's invited!!!</h2>
+            <p>In the peaceful atmosphere of your own home, watching Netflix or playing a game, I invite you to continue there and dedicate some of that time to bet on yourself and do what you have always been postponing :)</p><br>
+            <img id="croissant" src="https://www.kasandbox.org/programming-images/food/croissant.png">
+        </div>
+            
+        <div class="footer">
+            <h2>Details</h2>
+            <ul>
+                <li>When: Everyday</li><br>
+                <li>Where: In the comfort of your own home</li><br>
+            </ul>
+        </div>
         
     </body>
 </html>
