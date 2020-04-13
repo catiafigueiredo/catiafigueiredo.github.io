@@ -2,35 +2,55 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Event invite</title>
+        <title>Project: Blog</title>
         <style>
             .side-bar {
                 float:right;
-                width: 170px;
+                width: 30%;
                 text-align: center;
-                padding: 5px;
+                padding: 10px;
                 padding-top: 50px;
-                padding-bottom: 50px;
-                background-color: rgb(247, 210, 228);
+                padding-bottom: 100%;
+                background-color: rgb(247, 222, 234);
+                line-height: 2em;
             }
-            #earth {
-               width: 140px;
-            }
-            .main-area {
-                text-align: center;
-                padding: 5px;
-                margin-right: 190px;
+            .side-bar h2, .footer h2 {
+                border: none;
             }
             h1 {
-                font-family: Papyrus;
-            } 
-            h2 {
-                font-family: Papyrus;
+                color: rgb(133, 133, 133);
+                font-family: "Papyrus", sans-serif;
+                text-align: center;
             }
-            #croissant {
-                width: 275px;
+            h2 {
+                border-top: 5px dotted rgb(153, 153, 153);
+                border-bottom: 1px solid rgb(242, 242, 242);
+                font-family: "Papyrus", sans-serif;
+                text-align: center;
+            }
+            h6 {
+                font-family: "Harrington";
+                font-size: 11px;
+                text-decoration: underline;
+            }
+            p {
+                margin: 10px;
+                padding-right: 200px;
+                text-align: justify;
+            }
+            #contents {
+                font-size: 14px;
+                font-style: italic;
+                text-align: center;
+            }
+            #sumarry-table{
+                margin: auto;
+                text-align: center;
             }
             .footer {
+                position: fixed;
+                bottom: 1px;
+                width: 100%;
                 text-align: center;
                 clear:right;
                 background-color: rgb(224, 224, 224);
@@ -40,23 +60,52 @@
     </head>
     <body>
         <div class="side-bar">
-            <p>Let's thank the Planet Earth<br>
-            for the first time!</p><br>
-            <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" width="30"><br>
-            <img id="earth" src="https://www.kasandbox.org/programming-images/space/planet.png">
+            <h2>Computer Programing</h2>
+            <br>
+            <ul id="contents">
+                <li><a href="#java-script">Intro to JS: Drawing & Animation</a></li><br>
+                <li><a href="#html-css">Intro to HTML/CSS: Making webpages</a></li></ul>
         </div>
         
-        <div class="main-area">
-            <h1>Stay at home</h1>
-            <h2>Everybody's invited!!!</h2>
-            <p>In the peaceful atmosphere of your own home, watching Netflix or playing a game, I invite you to continue there and dedicate some of that time to bet on yourself and do what you have always been postponing :)</p><br>
-            <img id="croissant" src="https://www.kasandbox.org/programming-images/food/croissant.png">
-        </div>
+        <div class="main-area">        
+            <h1>Cátia's records</h1>
+            <br>
+            <h2>Intro to JS: Drawing & Animation</h2>
+            <h6>Finished on 3rd April 2020</h6>
+            <p>List of subjects: Intro to programming, Drawing basics, Coloring, Variables, Animation basics, Interactive programs, Becoming a community coder, Bonus: Resizing with variables, Text and strings, Functions, Logic and if Statements, Debugging programs, Looping, Writing clean code, Arrays, Objects, Object-Oriented Design, Becoming a better programmer</p><br>
+            <br>
+            <br>
             
+            <h2>Intro to HTML/CSS: Making webpages</h2>
+            <h6>Finished on 11th April 2020</h6>
+            <p>List of subjects: Projects in progress, Projects completed, Intro to HTML, Intro to CSS, More HTML tags, CSS text properties, Web development tools, CSS layout, More CSS selectors, Other ways to embed CSS, Further learning</p><br>
+            <br>
+            <br>
+        </div>
+        
         <div class="footer">
-            <h2>Details</h2>
-            <p>When: Everyday</p>
-            <p>Where: In the comfort of your own home</p><br>
+            <h2 id="summary">Summary of learned courses</h2>
+            <table id="sumarry-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Topics available</th>
+                        <th>Concluded</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Intro to JS: Drawing & Animation</td>
+                        <td>18</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to HTML/CSS: Making webpages</td>
+                        <td>9</td>
+                        <td>9</td>
+                    </tr>
+                </tbody><br>
+            </table>
         </div>
         
     </body>
